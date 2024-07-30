@@ -126,7 +126,7 @@
             const query = document.getElementById('search').value; // Get the user's search query
             console.log(`Search query: ${query}`); // Log the search query to the console for debugging
 
-            fetch(`https://api.giphy.com/v1/gifs/search?api_key=${apiKey}&q=${query}&limit=1000000`)
+            fetch(`https://api.giphy.com/v1/gifs/search?api_key=${apiKey}&q=${query}&limit=1000`)
                 .then(response => {
                     if (!response.ok) {
                         throw new Error(`HTTP error! status: ${response.status}`);
